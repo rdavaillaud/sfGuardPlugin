@@ -13,7 +13,7 @@
  * @package    symfony
  * @subpackage plugin
  * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
- * @version    SVN: $Id: BasesfGuardAuthActions.class.php 19772 2009-07-01 08:41:12Z fabien $
+ * @version    SVN: $Id: BasesfGuardAuthActions.class.php 32962 2011-08-28 07:55:20Z fabien $
  */
 class BasesfGuardAuthActions extends sfActions
 {
@@ -63,8 +63,6 @@ class BasesfGuardAuthActions extends sfActions
       {
         return $this->redirect($module.'/'.sfConfig::get('sf_login_action'));
       }
-
-      $this->getResponse()->setStatusCode(401);
     }
   }
 
